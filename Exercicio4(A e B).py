@@ -17,7 +17,7 @@ def juros_compostos(valor_final, taxa, investimento_periodo, tempo):
     print(f'Investimento mensal: {investimento_periodo}')
     print(f'Quantos meses ira render: {tempo}')
     print(f'Taxa de juros por periodo: {taxa}')
-    for valor in range(tempo + 1):
+    for valor in range(tempo):
         valor_final = valor_final + (valor_final * (taxa / 100)) + investimento_periodo
         n = n + 1
         dicionario.update({n: format(valor_final, '.2f')})
